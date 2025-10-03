@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Button from "./Button";
 
 const Navebar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,13 +19,14 @@ const Navebar = () => {
     <div className="px-4 sm:px-6 md:px-8 fixed w-full bg-white/95 backdrop-blur-lg shadow-md z-50 top-0">
       <nav>
         <div className="flex justify-between items-center h-16 lg:h-20">
-
           <div>
-            <img src="/images/logo.png" alt="Logo" className="h-12" />
+            <a href="/">
+              <img src="/images/logo.png" alt="Logo" className="h-12" />
+            </a>
           </div>
 
           <div className="hidden lg:flex items-center gap-10">
-            <ul className="flex items-center gap-10 border border-blue-500 py-3 px-6 rounded-full">
+            <ul className="flex items-center gap-10 border border-b-3 border-blue-500 py-3 px-6 rounded-full">
               {navContent.map((item, index) => (
                 <li key={index}>
                   <a
@@ -36,12 +38,10 @@ const Navebar = () => {
                 </li>
               ))}
             </ul>
-            <a
-              href="./appointment"
-              className="text-white bg-blue-500 hover:border-blue-500 hover:bg-white hover:text-blue-500 px-5 py-3.5 rounded-full border transition"
-            >
-              Contact Us
-            </a>
+          </div>
+
+          <div className="hidden lg:block">
+            <Button btnText={"Contact Us"} />
           </div>
 
           <div className="lg:hidden">
@@ -72,7 +72,11 @@ const Navebar = () => {
                   stroke="currentColor"
                   strokeWidth={2}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
                 </svg>
               )}
             </button>
@@ -83,7 +87,7 @@ const Navebar = () => {
           <div className="lg:hidden bg-white shadow-lg border-t border-zinc-200">
             <ul className="flex flex-col items-center gap-4 py-4 font-medium">
               {navContent.map((item, index) => (
-                <li key={index} className="w-full text-center">
+                <li key={index} className="w-full text-center text-black">
                   <a
                     href={item.link}
                     className="block py-2 px-4 hover:text-blue-500 hover:bg-zinc-100 rounded-md"
