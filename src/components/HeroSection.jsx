@@ -40,7 +40,7 @@ const HeroSection = () => {
             <img
               src="/images/young-person-intership.jpg"
               alt="young-person"
-               className="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-60 lg:h-60 rounded-full object-cover shadow-xl border-4 border-white absolute bottom-0 lg:right-5 right-28 lg:-top-15 top-5 lg:-bottom-10"
+               className="w-24 h-24 sm:w-32 sm:h-32 md:w-44 md:h-44 lg:w-60 lg:h-60 rounded-full object-cover shadow-xl border-4 border-white absolute bottom-0 lg:right-5 right-15 lg:-top-15 top-0 lg:-bottom-10"
             />
           </div>
         </div>

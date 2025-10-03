@@ -29,7 +29,7 @@ const Navebar = () => {
                 <li key={index}>
                   <a
                     href={item.link}
-                    className="relative inline-block pb-1 hover:text-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
+                    className="relative text-black inline-block pb-1 hover:text-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
                   >
                     {item.lable}
                   </a>
