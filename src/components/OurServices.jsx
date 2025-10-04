@@ -201,13 +201,13 @@ const cardItems = [
         {cardItems.map((card, index) => (
           <div
             key={index}
-            className="p-5 border border-zinc-300 md:w-90 w-full h-70"
+            className="p-5 border border-zinc-300 md:w-90 w-full h-70 overflow-hidden"
           >
             <div className="flex justify-center items-center gap-8 border-b border-zinc-300">
               <div className="py-5">{card.svg}</div>
               <div className="text-3xl font-bold">{card.heading}</div>
             </div>
-            <div className="pt-5 relative">
+            <div className="pt-5 relative ">
               <p>{card.para}</p>
               <button className="group relative inline-flex h-12 items-center justify-center rounded-md px-6 font-medium text-black cursor-pointer pb-1 hover:text-blue-500 after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full">
                 <span>Hover me</span>
