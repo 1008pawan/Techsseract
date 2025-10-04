@@ -3,6 +3,7 @@ import React from "react";
 import Button from "./Button";
 
 const OurWorks = () => {
+  
   const bgImage = [
     {
       img: "/images/portfolio/mac-uprrda.jpg",
@@ -37,7 +38,7 @@ const OurWorks = () => {
   ];
 
   return (
-    <div className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto">
+    <div className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto"> 
       {/* Heading Section */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-5 pb-8">
         <div className="text-center md:text-left">
