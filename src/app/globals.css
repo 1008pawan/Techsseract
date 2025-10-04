@@ -60,3 +60,31 @@
     transform: translate(100%, 100%) rotate(25deg);
   }
 }
+
+
+/* shape */
+.custom-shape-divider-top,
+.custom-shape-divider-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top {
+  top: 0;
+}
+
+.custom-shape-divider-bottom {
+  bottom: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-top svg,
+.custom-shape-divider-bottom svg {
+  position: relative;
+  display: block;
+  width: calc(182% + 1.3px);
+  height: 158px;
+}

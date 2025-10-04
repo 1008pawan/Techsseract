@@ -7,7 +7,7 @@ const SecondHeroSection = () => {
 
   useEffect(() => {
     let start = 0;
-    const end = 10;
+    const end = 100;
     const duration = 500;
     const stepTime = Math.abs(Math.floor(duration / end));
 
@@ -46,10 +46,10 @@ const SecondHeroSection = () => {
         </div>
 
         <div className="relative flex-1">
-          <div className="absolute z-10 h-32 w-24 sm:h-40 sm:w-32 bg-[url('/images/second/secondBgImage.jpg')] bg-cover bg-center lg:left-81 left-200px top-0 border-b-8 border-l-8 text-center flex flex-col justify-center text-white">
-            <h1 className="font-bold text-3xl sm:text-5xl">{count}</h1>
+          <div className="absolute z-10 h-32 w-24 sm:h-40 sm:w-32 bg-[url('/images/second/secondBgImage.jpg')] bg-cover bg-center lg:left-81 left-200px top-0 border-b-8 md:border-l-8 border-r-8 text-center flex flex-col justify-center text-white">
+            <div className="flex justify-center"><h1 className="font-bold text-3xl sm:text-5xl">{count}</h1><span className="text-2xl">+</span></div>
             <p className="text-xs sm:text-base font-semibold">
-              Years Experience
+              Projects Delivered
             </p>
           </div>
 

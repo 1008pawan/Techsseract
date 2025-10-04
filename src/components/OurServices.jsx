@@ -1,4 +1,5 @@
 import React from "react";
+import Shape from "./Shape";
 
 const OurServices = () => {
 const cardItems = [
@@ -201,10 +202,10 @@ const cardItems = [
         {cardItems.map((card, index) => (
           <div
             key={index}
-            className="p-5 border border-zinc-300 md:w-90 w-full h-70 overflow-hidden"
+            className="p-5 border border-zinc-300 md:w-90 w-full h-70 overflow-hidden group"
           >
             <div className="flex justify-center items-center gap-8 border-b border-zinc-300">
-              <div className="py-5">{card.svg}</div>
+              <div className="py-5 group-hover:rotate-y-180">{card.svg}</div>
               <div className="text-3xl font-bold">{card.heading}</div>
             </div>
             <div className="pt-5 relative ">
@@ -247,7 +248,7 @@ const cardItems = [
                 </div>
               </button>
               <div className="flex justify-end absolute -right-5 -bottom-8">
-                <img src="images/icons/service_card_bg_2.jpg" alt="" />
+                <img src="images/icons/service_card_bg_2.jpg" alt="" className="opacity-50 group-hover:opacity-100"/>
               </div>
             </div>
           </div>
