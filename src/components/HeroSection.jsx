@@ -31,7 +31,10 @@ const HeroSection = () => {
     {
       id: 2,
       bgImage: "/images/bgImageOne.jpg",
-      images: ["/images/firstSlider1.jpg", "/images/young-person-intership.jpg"],
+      images: [
+        "/images/firstSlider1.jpg",
+        "/images/young-person-intership.jpg",
+      ],
       heading: "Sustainable & Eco-Friendly Solutions",
       text: `We focus on creating sustainable and eco-friendly solutions that not only drive growth for your business but also protect and preserve the environment.`,
     },
@@ -41,7 +44,6 @@ const HeroSection = () => {
 
   return (
     <div className="mt-16 md:mt-20 relative w-full">
-      {/* Right navigation dots (desktop only) */}
       <div className="hidden lg:flex absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center space-y-2">
         {slides.map((slide, index) => (
           <button
@@ -58,14 +60,12 @@ const HeroSection = () => {
         ))}
       </div>
 
-      {/* Hero Background */}
       <div
         className="bg-cover bg-center min-h-[80vh] lg:h-screen transition-opacity duration-700 flex flex-col justify-between"
         style={{ backgroundImage: `url(${activeSlide.bgImage})` }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
 
-        {/* Top Shape */}
         <div className="relative z-10">
           <img
             src="images/icons/hero_bg_shape2_1.jpg"
@@ -74,9 +74,7 @@ const HeroSection = () => {
           />
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center px-4 sm:px-8 lg:px-16 xl:px-32 z-10 relative">
-          {/* Left Text */}
           <div className="text-center lg:text-left space-y-2">
             <h2 className="text-orange-500 text-sm md:text-lg font-semibold uppercase">
               About Our Company
@@ -92,7 +90,6 @@ const HeroSection = () => {
             </div>
           </div>
 
-          {/* Right Images */}
           <div className="relative flex justify-center lg:justify-end items-center mt-6 lg:mt-0">
             <img
               src={activeSlide.images[0]}
@@ -107,7 +104,6 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Bottom Shape */}
         <div className="relative z-10">
           <img
             src="images/icons/hero_bg_shape2_2.jpg"
