@@ -53,7 +53,7 @@ const Portfolio = () => {
             <ul className="flex gap-2">
                 <li>Home</li>
                 <li>{`>`}</li>
-                <li>Portfolio</li>
+                <li>Portfolio</li> 
             </ul>
         </div>
         <div className="relative z-10">
