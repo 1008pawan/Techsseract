@@ -8,11 +8,11 @@ const Navebar = () => {
 
   const navContent = [
     { lable: "Home", link: "/" },
-    { lable: "About Us", link: "/" },
-    { lable: "Our Services", link: "/" },
-    { lable: "Our Works", link: "/" },
-    { lable: "Why Choose Us", link: "/" },
-    { lable: "Gallery", link: "/" },
+    { lable: "About Us", link: "#AboutUs" },
+    { lable: "Our Services", link: "#OurServices" },
+    { lable: "Our Works", link: "#OurWork" },
+    { lable: "Why Choose Us", link: "#WhyChooseUs" },
+    { lable: "Gallery", link: "#Gallery" },
   ];
 
   return (
@@ -41,7 +41,9 @@ const Navebar = () => {
           </div>
 
           <div className="hidden lg:block">
-            <Button btnText={"Contact Us"} />
+            <a href="#ContactUs">
+              <Button btnText={"Contact Us"} />
+            </a>
           </div>
 
           <div className="lg:hidden">

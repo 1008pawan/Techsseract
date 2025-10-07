@@ -43,7 +43,7 @@ const HeroSection = () => {
   const activeSlide = slides[activeIndex];
 
   return (
-    <div className="mt-16 md:mt-20 relative w-full">
+    <div id="heroSection" className="mt-16 md:mt-20 relative w-full">
       <div className="hidden lg:flex absolute right-4 md:right-8 top-1/2 -translate-y-1/2 z-20 flex-col items-center space-y-2">
         {slides.map((slide, index) => (
           <button
@@ -86,7 +86,7 @@ const HeroSection = () => {
               {activeSlide.text}
             </p>
             <div className="pt-2">
-              <Button btnText={"Contact Us"} />
+              <a href="#ContactUs"><Button btnText={"Contact Us"} /></a>
             </div>
           </div>
 

@@ -29,6 +29,12 @@ const Shape = ({ position = "top", color = "#50E3C2" }) => {
           fill={color}
         />
       </svg>
+
+      {/* use shape you where you use */}
+      <div className="relative min-h-[150px] mb-[0px]">
+        {/* Content */}
+        <Shape position="bottom" className="z-20 rotate-180 h-[150px]" />
+      </div>
     </div>
   );
 };

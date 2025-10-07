@@ -39,7 +39,7 @@ const SecondHeroSection = () => {
   ];
 
   return (
-    <div className="py-16 px-6 grid lg:grid-cols-5 grid-cols-1 gap-20">
+    <div id="AboutUs" className="py-16 px-6 grid lg:grid-cols-5 grid-cols-1 gap-20">
       <div className="flex flex-col lg:flex-row gap-6 lg:col-span-3">
         <div className="hidden lg:block vertical-text animate-verticalMove text-white text-outline text-5xl lg:text-7xl rotate-180 text-center font-bold">
           Since 2017
@@ -47,7 +47,10 @@ const SecondHeroSection = () => {
 
         <div className="relative flex-1">
           <div className="absolute z-10 h-32 w-24 sm:h-40 sm:w-32 bg-[url('/images/second/secondBgImage.jpg')] bg-cover bg-center lg:left-81 left-200px top-0 border-b-8 md:border-l-8 border-r-8 text-center flex flex-col justify-center text-white">
-            <div className="flex justify-center"><h1 className="font-bold text-3xl sm:text-5xl">{count}</h1><span className="text-2xl">+</span></div>
+            <div className="flex justify-center">
+              <h1 className="font-bold text-3xl sm:text-5xl">{count}</h1>
+              <span className="text-2xl">+</span>
+            </div>
             <p className="text-xs sm:text-base font-semibold">
               Projects Delivered
             </p>
@@ -168,7 +171,7 @@ const SecondHeroSection = () => {
         </div>
 
         <div className="pt-3">
-          <Button btnText={"Contact Us"} />
+          <a href="#ContactUs"><Button btnText={"Contact Us"} /></a>
         </div>
       </div>
     </div>
