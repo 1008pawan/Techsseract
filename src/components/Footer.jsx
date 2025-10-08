@@ -28,7 +28,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-3">Our Services</h3>
           <ul className="space-y-2 text-md font-semibold">
             <li>
-               <SmartHomeLink />
+              <SmartHomeLink />
             </li>
             <li>
               <a href="#AboutUs" className="hover:text-blue-500">
@@ -215,7 +215,7 @@ const Footer = () => {
             </button>
             <div className="w-full h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8026368546593!2d80.9920664!3d26.846229!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399acac498d43969%3A0x3fbbebc6d4059f50!2sCMP%20Techsseract%20LLP!5e0!3m2!1sen!2sin!4v1759841344717!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3559.787750358177!2d80.98947667543716!3d26.846702376686622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDUwJzQ4LjEiTiA4MMKwNTknMzEuNCJF!5e0!3m2!1sen!2sin!4v1759929072259!5m2!1sen!2sin"
                 style={{ border: 0 }}
                 allowFullScreen
                 loading="lazy"
