@@ -283,7 +283,7 @@ const MobileApp = () => {
         <h1 className="text-5xl font-semibold text-zinc-600 text-center">
           App Preview
         </h1>
-        <div className="grid md:grid-cols-3 grid-cols-1 py-20 w-6/7 mx-auto">
+        <div className="grid md:grid-cols-3 grid-cols-1 py-20 w-6/7 mx-auto gap-5">
           <div className=" flex justify-center items-center">
             <img
               src="images/mobileApp/updemp-app-img-1.png"
@@ -305,15 +305,16 @@ const MobileApp = () => {
         </div>
       </section>
 
-      <section>
-        <div className="rounded-xl shadow-2xl inset-shadow-sm/20 h-150 w-300 mx-auto my-20 py-5">
+      <section className="px-4 sm:px-6 lg:px-8">
+        <div className="rounded-xl shadow-2xl inset-shadow-sm/30 p-5 bg-white max-w-6xl mx-auto md:h-full h-100 mb-20 py-5">
           <div className="project-feature-image">
-            <figure className="">
-              <div>
+            <figure>
+              <div className="relative w-full h-0 pb-[56.25%]">
                 <iframe
-                  className="w-full h-[500px] p-3"
+                  className="absolute top-0 left-0 w-full md:h-full h-100 rounded-lg"
                   src="https://upfdr.org/"
                   title="description"
+                  allowFullScreen
                 />
               </div>
             </figure>
