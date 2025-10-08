@@ -100,7 +100,7 @@ const Navebar = () => {
               ))}
               <li className="w-full text-center">
                 <a
-                  href="./appointment"
+                  href="#ContactUs"
                   className="block text-white bg-blue-500 hover:border-blue-500 hover:bg-white hover:text-blue-500 px-4 py-2 rounded-full border transition"
                 >
                   Contact Us

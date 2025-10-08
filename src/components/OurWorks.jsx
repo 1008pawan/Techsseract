@@ -37,7 +37,10 @@ const bgImage = [
 
 const OurWorks = () => {
   return (
-    <div id="OurWork" className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto">
+    <div
+      id="OurWork"
+      className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto"
+    >
       {/* Heading Section */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-5 pb-8">
         <div className="text-center md:text-left">
@@ -79,7 +82,9 @@ const OurWorks = () => {
           </h1>
         </div>
         <div className="flex justify-center md:justify-end">
-          <a href="#ContactUs"><Button btnText={"Portfolio"} /></a>
+          <a href="/portfolio">
+            <Button btnText={"Portfolio"} />
+          </a>
         </div>
       </div>
 
@@ -99,24 +104,26 @@ const OurWorks = () => {
                 <p className="hidden sm:block text-sm text-zinc-300">
                   {bg.para}
                 </p>
-                <button className="mt-4 bg-blue-500 h-10 w-10 rounded-full text-zinc-300 flex justify-center items-center hover:scale-110 transition-transform">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12h14" />
-                    <path d="M13 18l6 -6" />
-                    <path d="M13 6l6 6" />
-                  </svg>
-                </button>
+                <a href="/portfolio">
+                  <button className="mt-4 bg-blue-500 h-10 w-10 rounded-full text-zinc-300 flex justify-center items-center hover:scale-110 transition-transform cursor-pointer">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="20"
+                      height="20"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M5 12h14" />
+                      <path d="M13 18l6 -6" />
+                      <path d="M13 6l6 6" />
+                    </svg>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

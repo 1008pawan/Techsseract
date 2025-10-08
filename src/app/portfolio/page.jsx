@@ -31,73 +31,103 @@ const bgImage = [
     heading: "Mahakumbh 2025 Land & Suvidha Allotment",
     para: "The Mahakumbh 2025 Land & Suvidha Allotment portal provides a comprehensive platform for managing the allocation of land and suvidha required for the event",
   },
+  {
+    img: "images/portfolios/mac-dms.png",
+    heading: "UPDESCO PMS",
+    para: "This portal was developed to help Updesco manage and organize Projects under it in an easy and efficient manner.",
+  },
+  {
+    img: "images/portfolios/mac-aec.jpg",
+    heading: "UPDESCO AEC",
+    para: "This portal was developed to help Updesco manage and organize working of all Institutes under it in an easy and efficient manner.",
+  },
+  {
+    img: "images/portfolios/mac-aww.jpg",
+    heading: "Aww Recruitment Portal 2024",
+    para: "This portal was developed to help for the recruitment of positions under Anganwadi Bharti Scheme 2024.",
+  },
+  {
+    img: "images/portfolios/mac-flat.jpg",
+    heading: "FLAT/RENT MANAGEMENT",
+    para: "This software is helpful for keeping the record of customers who are buying new flats and the payment record as well. Not only this, the project rent management is done properly through this software.",
+  },
+  {
+    img: "images/portfolios/default.png",
+    heading: "IGSTAMP PMU",
+    para: "IGSTAMP PMU is responsible for detailed planning of development projects, which includes defining clear objectives, and creating timelines along with resource allocation strategies.",
+  },
+  {
+    img: "images/portfolios/default.png",
+    heading: "UPDEMP PMU",
+    para: "UPDEMP PMU is responsible for detailed planning of development projects, which includes assessing community needs, defining clear objectives, and creating timelines along with resource allocation strategies.",
+  },
+  {
+    img: "images/portfolios/mac-updemp.jpg",
+    heading: "UPDEMP",
+    para: "This is a project of UPDESCO in which vendors will register themselves. Through UPDEMP we can Add Vendor, Recommend by inspection team, category wise adding and approving vendors. It helps in keeping the record of vendors across UP",
+  },
 ];
 
 const Portfolio = () => {
   return (
     <div>
       <div
-        className="bg-cover bg-center min-h-[80vh] lg:h-screen transition-opacity duration-700 flex flex-col justify-between"
-        style={{ backgroundImage: `url("")` }}
+        className="bg-cover bg-center h-[100vh] mt-16 md:mt-20 w-full transition-opacity duration-700 flex flex-col justify-between relative"
+        style={{
+          backgroundImage: `url("images/portfolios/portfolioHero.jpg")`,
+        }}
       >
         <div className="absolute inset-0 bg-black/80"></div>
+
         <div className="relative z-10">
           <img
             src="images/icons/hero_bg_shape2_1.jpg"
             alt="bg-shape"
-            className="h-12 sm:h-16 md:h-20 w-auto"
+            className="h-15 sm:h-16 md:h-25 w-auto"
           />
         </div>
-        <div className="flex flex-col justify-center items-center">
-            <h1 className="text-5xl font-bold">Portfolio</h1>
-            <ul className="flex gap-2">
-                <li>Home</li>
-                <li>{`>`}</li>
-                <li>Portfolio</li> 
-            </ul>
+
+        <div className="flex flex-col justify-center items-center z-20 h-[80vh]">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white">
+            Portfolio
+          </h1>
+          <ul className="flex gap-2 mt-4 font-semibold text-white">
+            <li>
+              <a href="/" className="hover:text-orange-500">Home</a>
+            </li>
+            <li>{`>`}</li>
+            <li className="text-blue-500">Portfolio</li>
+          </ul>
         </div>
+
         <div className="relative z-10">
           <img
             src="images/icons/hero_bg_shape2_2.jpg"
             alt="bg-shape"
-            className="h-12 sm:h-16 md:h-20 w-auto"
+            className="h-15 sm:h-16 md:h-25 w-auto"
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-20 w-6/7 mx-auto">
         {bgImage.map((bg, index) => (
-          <div
-            key={index}
-            style={{ backgroundImage: `url("${bg.img}")` }}
-            className="bg-cover bg-center h-64 sm:h-72 md:h-80 rounded-lg shadow-md group relative overflow-hidden"
-          >
-            <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-lg flex justify-center items-center">
-              <div className="border border-zinc-300 h-[80%] w-[85%] sm:w-[80%] rounded-lg flex flex-col justify-center items-center transition-transform duration-500 group-hover:scale-105 px-4 text-center">
-                <h1 className="text-lg sm:text-xl md:text-2xl text-white font-semibold mb-3">
+          <div key={index} className="md:h-150 h-120 rounded-lg shadow-xl overflow-hidden flex flex-col justify-between">
+            <div className="bg-cover bg-center md:h-75 h-55 w-full p-5 rounded-lg">
+              <img
+                src={`${bg.img}`}
+                alt="Portfolio-Images"
+                className="bg-cover bg-center h-50 w-full md:h-75 rounded-lg hover:scale-110 transition-all"
+              />
+            </div>
+            <div className="rounded-lg flex justify-center items-center md:mt-10">
+              <div className="rounded-lg flex flex-col justify-center items-center px-4 text-center">
+                <h1 className="text-lg sm:text-xl md:text-2xl text-zinc-700 font-semibold mb-3">
                   {bg.heading}
                 </h1>
-                <p className="hidden sm:block text-sm text-zinc-300">
-                  {bg.para}
-                </p>
-                <button className="mt-4 bg-blue-500 h-10 w-10 rounded-full text-zinc-300 flex justify-center items-center hover:scale-110 transition-transform">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M5 12h14" />
-                    <path d="M13 18l6 -6" />
-                    <path d="M13 6l6 6" />
-                  </svg>
-                </button>
+                <p className="text-sm text-zinc-500 px-5">{bg.para}</p>
               </div>
+            </div>
+            <div className="flex items-end">
+              <img src="images/icons/service_card_bg_1.jpg" alt="icon" className="rotate-180"/>
             </div>
           </div>
         ))}

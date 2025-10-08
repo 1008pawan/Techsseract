@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Button from "./Button";
+import SmartHomeLink from "./SmartHomeLink";
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -27,9 +28,7 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-3">Our Services</h3>
           <ul className="space-y-2 text-md font-semibold">
             <li>
-              <a href="#heroSection" className="hover:text-blue-500">
-                Home
-              </a>
+               <SmartHomeLink />
             </li>
             <li>
               <a href="#AboutUs" className="hover:text-blue-500">
@@ -79,26 +78,17 @@ const Footer = () => {
           <h3 className="text-xl font-bold mb-3">Services</h3>
           <ul className="space-y-2 text-md font-semibold">
             <li>
-              <a
-                href="/portfolio"
-                className="hover:text-blue-500"
-              >
+              <a href="/portfolio" className="hover:text-blue-500">
                 Web Development
               </a>
             </li>
             <li>
-              <a
-                href="/portfolio"
-                className="hover:text-blue-500"
-              >
+              <a href="/portfolio" className="hover:text-blue-500">
                 Digital Marketing
               </a>
             </li>
             <li>
-              <a
-                href="/portfolio"
-                className="hover:text-blue-500"
-              >
+              <a href="/mobileApp" className="hover:text-blue-500">
                 Mobile App Development
               </a>
             </li>
@@ -246,14 +236,11 @@ const Footer = () => {
           </a>
         </p>
         <div className="space-x-4">
-          <a href="#" className="hover:text-white">
+          <a href="/PrivacyPolicy" className="hover:text-white">
             Privacy Policy
           </a>
-          <a href="#" className="hover:text-white">
+          <a href="/terms&condition" className="hover:text-white">
             Terms & Condition
-          </a>
-          <a href="#" className="hover:text-white">
-            Support Policy
           </a>
         </div>
       </div>
