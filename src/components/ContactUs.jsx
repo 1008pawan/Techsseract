@@ -102,7 +102,7 @@ const ContactUs = () => {
                     key={index}
                     src={client.image}
                     alt={client.name}
-                    className={`md:w-25 w-12 md:h-25 h-12 rounded-full border-2 ${
+                    className={`md:w-25 w-15 md:h-25 h-15 rounded-full border-2 ${
                       index === activeIndex
                         ? "border-orange-500 scale-110"
                         : "border-gray-500 opacity-60"
