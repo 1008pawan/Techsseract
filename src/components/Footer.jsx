@@ -9,7 +9,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-1.jpg"
         alt="Gallery 1"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
@@ -18,7 +18,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-2.jpg"
         alt="Gallery 2"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
@@ -27,7 +27,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-3.jpg"
         alt="Gallery 3"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
@@ -36,7 +36,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-4.jpg"
         alt="Gallery 4"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
@@ -45,7 +45,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-5.jpg"
         alt="Gallery 5"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
@@ -54,7 +54,7 @@ const Gallery = [
       <img
         src="images/footer/service-img-6.jpg"
         alt="Gallery 6"
-        className="w-full h-full object-cover rounded"
+        className="w-full h-full object-cover rounded cursor-pointer"
       />
     ),
   },
