@@ -69,9 +69,9 @@ const Footer = () => {
       <div className="bg-black grid grid-cols-1 md:grid-cols-6 gap-8 border-t border-white p-10">
         {/* Company Intro */}
         <div>
-          <div className="h-25">
+          <div className="h-20">
             <a href="https://techsseract.com/">
-              <img src="images/logo.png" alt="Logo" className="h-20" />
+              <img src="images/logo.png" alt="Logo" className="h-15" />
             </a>
           </div>
           <p className="text-xs font-semibold mb-4">

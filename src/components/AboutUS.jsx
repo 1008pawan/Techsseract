@@ -104,7 +104,7 @@ const SecondHeroSection = () => {
               </defs>
             </svg>
           </span>
-          <h3 className="text-orange-600 font-semibold text-sm sm:text-base">
+          <h3 className="text-orange-600 font-semibold text-sm sm:text-base uppercase">
             ABOUT OUR COMPANY
           </h3>
           <span className="text-orange-600">

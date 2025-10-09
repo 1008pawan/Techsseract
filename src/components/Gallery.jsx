@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import Shape from "./Shape";
 
 const Gallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -128,7 +127,7 @@ const Gallery = () => {
               />
             </svg>
           </span>
-          <h3 className="text-orange-600 font-semibold text-lg sm:text-xl">
+          <h3 className="text-orange-600 font-semibold text-lg sm:text-xl uppercase">
             Gallery
           </h3>
           <span className="text-orange-600">
@@ -147,7 +146,7 @@ const Gallery = () => {
           </span>
         </div>
       </div>
-      <h1 className="text-5xl font-bold text-center py-5">Gallery</h1>
+      <h1 className="md:text-5xl text-xl font-bold text-center py-5">See the moments that define us</h1>
       <div>
         <div className=" flex items-center justify-center p-4">
           <div className="md:w-7/8 w-full mx-auto grid md:grid-cols-3 grid-cols-1 gap-8 bg-white shadow-lg hover:shadow-xl rounded-lg p-6 py-12 border border-gray-300">
@@ -156,9 +155,9 @@ const Gallery = () => {
                 key={index}
                 onClick={() => {
                   setSelectedVideoIndex(index);
-                  setIsModalOpen(true); 
+                  setIsModalOpen(true);
                 }}
-                className="flex justify-center items-center cursor-pointer"
+                className="flex justify-center items-center cursor-pointer hover:scale-105 transition-all"
               >
                 {data.item}
               </div>

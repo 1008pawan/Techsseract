@@ -169,8 +169,8 @@ const OurServices = () => {
             </defs>
           </svg>
         </span>
-        <h3 className="text-orange-600 font-semibold text-xl sm:text-2xl">
-          our services
+        <h3 className="text-orange-600 font-semibold text-xl sm:text-2xl uppercase">
+          Our Services
         </h3>
         <span className="text-orange-600">
           <svg
@@ -194,17 +194,19 @@ const OurServices = () => {
           </svg>
         </span>
       </div>
-      <h1 className="text-6xl font-bold text-center pb-8">
+      <h1 className="md:text-5xl text-xl font-bold text-center pb-8">
         What we can offer today
       </h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 w-6/7 mx-auto">
         {cardItems.map((card, index) => (
           <div
             key={index}
-            className="p-5 border border-zinc-300 md:w-90 w-full h-70 overflow-hidden group"
+            className="p-5 border border-zinc-300 md:w-90 w-full h-70 overflow-hidden group hover:shadow-xl hover:inset-shadow-sm"
           >
             <div className="flex justify-center items-center gap-8 border-b border-zinc-300">
-              <div className="py-5 group-hover:rotate-y-180 group-hover:scale-110">{card.svg}</div>
+              <div className="py-5 group-hover:rotate-y-180 group-hover:scale-110">
+                {card.svg}
+              </div>
               <div className="text-3xl font-bold">{card.heading}</div>
             </div>
             <div className="pt-5 relative ">

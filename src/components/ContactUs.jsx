@@ -47,7 +47,7 @@ const ContactUs = () => {
         className="h-[100vh] w-full"
         style={{ backgroundImage: `url("images/ContactUs/contactUs.png")` }}
       >
-        <div className="flex justify-center items-center gap-2 pt-30">
+        <div className="flex justify-center items-center gap-2 pt-33">
           <span className="text-orange-600">
             <svg
               width="20"
@@ -62,7 +62,7 @@ const ContactUs = () => {
               />
             </svg>
           </span>
-          <h3 className="text-orange-600 font-semibold text-lg sm:text-xl">
+          <h3 className="text-orange-600 font-semibold text-lg sm:text-xl uppercase">
             Contact Us
           </h3>
           <span className="text-orange-600">
@@ -80,8 +80,8 @@ const ContactUs = () => {
             </svg>
           </span>
         </div>
-        <h1 className="md:text-6xl text-3xl font-bold text-center py-5 text-white">
-          Contact Us Now
+        <h1 className="md:text-5xl text-xl font-bold text-center py-5 text-white">
+          Don’t wait-reach out and let’s go!  
         </h1>
         <div className="text-white">
           <div className="relative text-ba px-4">
@@ -102,7 +102,7 @@ const ContactUs = () => {
                     key={index}
                     src={client.image}
                     alt={client.name}
-                    className={`md:w-25 w-15 md:h-25 h-15 rounded-full border-2 ${
+                    className={`md:w-25 w-15 md:h-25 h-15 rounded-full border-2 hover:scale-110 ${
                       index === activeIndex
                         ? "border-orange-500 scale-110"
                         : "border-gray-500 opacity-60"

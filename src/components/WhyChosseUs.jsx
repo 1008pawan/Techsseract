@@ -39,8 +39,8 @@ const WhyChosseUs = () => {
             />
           </svg>
         </span>
-        <h3 className="text-orange-600 font-semibold text-lg sm:text-xl">
-          why choose us
+        <h3 className="text-orange-600 font-semibold text-lg sm:text-xl uppercase">
+          Why Choose Us
         </h3>
         <span className="text-orange-600">
           <svg
@@ -57,7 +57,7 @@ const WhyChosseUs = () => {
           </svg>
         </span>
       </div>
-      <h1 className="text-5xl font-bold text-center px-5 py-5">Why choose us ?</h1>
+      <h1 className="md:text-5xl text-xl font-bold text-center px-5 py-5">Where expertise meets excellence</h1>
       <div className="w-6/7 mx-auto px-5 py-10 gap-10 grid md:grid-cols-3 grid-cols-1">
         {whyChooseCard.map((items, index) => (
           <div key={index} className="h-60 md:w-70 w-full group relative">

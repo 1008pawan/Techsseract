@@ -59,7 +59,7 @@ const OurWorks = () => {
                 />
               </svg>
             </span>
-            <h3 className="text-orange-600 font-semibold text-lg sm:text-xl">
+            <h3 className="text-orange-600 font-semibold text-lg sm:text-xl uppercase">
               Our Works
             </h3>
             <span className="text-orange-600">
@@ -94,7 +94,7 @@ const OurWorks = () => {
           <div
             key={index}
             style={{ backgroundImage: `url("${bg.img}")` }}
-            className="bg-cover bg-center h-64 sm:h-72 md:h-80 rounded-lg shadow-md group relative overflow-hidden"
+            className="bg-cover bg-center h-64 sm:h-72 md:h-80 rounded-lg shadow-lg group relative overflow-hidden hover:scale-105 transition-all inset-shadow-sm/20"
           >
             <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-lg flex justify-center items-center">
               <div className="border border-zinc-300 h-[80%] w-[85%] sm:w-[80%] rounded-lg flex flex-col justify-center items-center transition-transform duration-500 group-hover:scale-105 px-4 text-center">
