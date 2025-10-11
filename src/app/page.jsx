@@ -1,5 +1,4 @@
 import ContactUs from "@/components/ContactUs";
-import Footer from "@/components/Footer";
 import Gallery from "@/components/Gallery";
 import HeroSection from "@/components/HeroSection";
 import OurServices from "@/components/OurServices";
