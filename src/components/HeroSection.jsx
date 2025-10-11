@@ -99,12 +99,12 @@ const HeroSection = () => {
             <img
               src={activeSlide.images[0]}
               alt="main"
-              className="w-36 h-36 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-lg border-4 border-white relative bottom-0 right-6 lg:right-30 lg:top-0"
+              className="w-36 h-36 sm:w-40 sm:h-40 md:w-56 md:h-56 lg:w-72 lg:h-72 xl:w-80 xl:h-80 rounded-full object-cover shadow-lg border-4 border-white relative bottom-0 md:right-0 right-6 lg:right-30 lg:top-0"
             />
             <img
               src={activeSlide.images[1]}
               alt="secondary"
-              className="w-22 h-22 sm:w-28 sm:h-28 md:w-40 md:h-40 lg:w-52 lg:h-52 xl:w-60 xl:h-60 rounded-full object-cover shadow-xl border-4 border-white absolute -top-10 sm:right-40 right-22 lg:-right-5 lg:-top-20"
+              className="w-22 h-22 sm:w-28 sm:h-28 md:w-40 md:h-40 lg:w-52 lg:h-52 xl:w-60 xl:h-60 rounded-full object-cover shadow-xl border-4 border-white absolute -top-10 sm:right-40 right-22 -md:top-[80px] md:right-60 lg:-right-5 lg:-top-20"
             />
           </div>
         </div>
