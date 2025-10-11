@@ -39,7 +39,7 @@ const SecondHeroSection = () => {
   ];
 
   return (
-    <div id="AboutUs" className="py-16 px-6 grid lg:grid-cols-5 grid-cols-1 gap-20">
+    <div id="AboutUs" className="py-16 px-6 grid lg:grid-cols-5 grid-cols-1 gap-20 scroll-mt-24">
       <div className="flex flex-col lg:flex-row gap-6 lg:col-span-3">
         <div className="hidden lg:block vertical-text animate-verticalMove text-white text-outline text-5xl lg:text-7xl rotate-180 text-center font-bold">
           Since 2017

@@ -39,7 +39,7 @@ const OurWorks = () => {
   return (
     <div
       id="OurWork"
-      className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto"
+      className="px-4 sm:px-6 lg:px-10 w-full max-w-7xl mx-auto scroll-mt-24"
     >
       {/* Heading Section */}
       <div className="flex flex-col md:flex-row justify-between items-center gap-5 pb-8">

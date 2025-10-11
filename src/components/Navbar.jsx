@@ -14,17 +14,22 @@ const Navebar = () => {
     { lable: "Why Choose Us", link: "#WhyChooseUs" },
     { lable: "Gallery", link: "#Gallery" },
   ];
+  
+  const handleLinkClick = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <div className="px-4 sm:px-6 md:px-8 fixed w-full bg-white/95 backdrop-blur-lg shadow-md z-50 top-0">
       <nav>
+        {/* disktop view */}
         <div className="flex justify-between items-center h-16 lg:h-20">
           <div>
             <a href="/">
               <img src="/images/logo.png" alt="Logo" className="h-12" />
             </a>
           </div>
-
+          
           <div className="hidden lg:flex items-center gap-10">
             <ul className="flex items-center gap-10 border border-b-3 border-blue-500 py-3 px-6 rounded-full">
               {navContent.map((item, index) => (
@@ -85,11 +90,12 @@ const Navebar = () => {
           </div>
         </div>
 
+        {/* mobile view */}
         {isMenuOpen && (
           <div className="lg:hidden bg-white shadow-lg border-t border-zinc-200">
             <ul className="flex flex-col items-center gap-4 py-4 font-medium">
               {navContent.map((item, index) => (
-                <li key={index} className="w-full text-center text-black">
+                <li key={index} onClick={handleLinkClick} className="w-full text-center text-black">
                   <a
                     href={item.link}
                     className="block py-2 px-4 hover:text-blue-500 hover:bg-zinc-100 rounded-md"
@@ -98,7 +104,7 @@ const Navebar = () => {
                   </a>
                 </li>
               ))}
-              <li className="w-full text-center">
+              <li className="w-full text-center" onClick={handleLinkClick}>
                 <a
                   href="#ContactUs"
                   className="block text-white bg-blue-500 hover:border-blue-500 hover:bg-white hover:text-blue-500 px-4 py-2 rounded-full border transition"

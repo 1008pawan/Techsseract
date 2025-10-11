@@ -110,7 +110,7 @@ const Gallery = () => {
     },
   ];
   return (
-    <div id="Gallery">
+    <div id="Gallery" className="scroll-mt-24">
       <div>
         <div className="flex justify-center items-center gap-2">
           <span className="text-orange-600">

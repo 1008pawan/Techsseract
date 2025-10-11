@@ -23,7 +23,7 @@ const WhyChosseUs = () => {
   ];
 
   return (
-    <div id="WhyChooseUs" className="py-10">
+    <div id="WhyChooseUs" className="py-10 scroll-mt-24">
       <div className="flex justify-center items-center gap-2">
         <span className="text-orange-600">
           <svg

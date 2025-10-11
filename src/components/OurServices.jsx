@@ -146,7 +146,7 @@ const OurServices = () => {
   ];
 
   return (
-    <div id="OurServices" className="py-10">
+    <div id="OurServices" className="py-10 scroll-mt-24">
       <div className="flex justify-center items-center gap-2">
         <span className="text-orange-600">
           <svg
